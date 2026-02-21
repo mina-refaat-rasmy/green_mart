@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:green_mart/AppTest/main_button.dart';
+import 'package:green_mart/core/functions/navigation.dart';
 import 'package:green_mart/core/styles/colors.dart';
 import 'package:green_mart/core/styles/images.dart';
 import 'package:green_mart/core/styles/text_styles.dart';
 import 'package:green_mart/core/wedgit/main_button.dart';
+import 'package:green_mart/feature/auth/pages/login_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -37,7 +38,7 @@ class WelcomeScreen extends StatelessWidget {
                 Text(
                   'Welcome \nto Green Mart',
                   textAlign: TextAlign.center,
-                  style: TextStyles.Hadline.copyWith(color: Colors.white),
+                  style: TextStyles.hadline.copyWith(color: Colors.white),
                 ),
                 SizedBox(height: 20),
                 Text(
@@ -45,9 +46,10 @@ class WelcomeScreen extends StatelessWidget {
                   style: TextStyles.subtitle.copyWith(color: Colors.white70),
                 ),
                 SizedBox(height: 20),
-                mainButton(
+                MainButton(
                   text: 'Get Started',
                   onPressed: () {
+                    push(context, LoginScreen());
                     // Navigate to the next screen
                   },
                 ),

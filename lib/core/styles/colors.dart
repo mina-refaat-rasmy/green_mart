@@ -8,4 +8,7 @@ abstract class AppColors {
   static const Color textSecondary = Color(0xFFF37A20);
   static const Color mainbutton = Color(0xFF53B175);
   static const Color white = Color(0xFFFFFFFF);
+  static const Color textfeild = Color(0xFFF0F1F2);
+  static const Color caption2 = Color(0xFF37474F);
+  
 }

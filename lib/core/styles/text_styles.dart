@@ -1,9 +1,8 @@
 import 'package:flutter/widgets.dart';
-import 'package:green_mart/core/styles/colors.dart';
 
 abstract class TextStyles {
-  static const TextStyle Hadline = TextStyle(
-    fontSize: 40,
+  static const TextStyle hadline = TextStyle(
+    fontSize: 30,
     fontWeight: FontWeight.w700,
   );
   static const TextStyle title = TextStyle(
@@ -11,7 +10,7 @@ abstract class TextStyles {
     fontWeight: FontWeight.bold,
   );
   static const TextStyle subtitle = TextStyle(
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: FontWeight.w600,
   );
   static const TextStyle body = TextStyle(fontSize: 16);

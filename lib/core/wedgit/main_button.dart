@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:green_mart/core/styles/text_styles.dart';
 
-class mainButton extends StatelessWidget {
-  const mainButton({
+class MainButton extends StatelessWidget {
+  const MainButton({
     super.key, required this.text, required this.onPressed,
 
   });
